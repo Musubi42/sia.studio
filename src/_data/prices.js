@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const environment = process.env.CONTEXT
 const api_key = environment !== "production"
   ? process.env.STRIPE_TEST_KEY

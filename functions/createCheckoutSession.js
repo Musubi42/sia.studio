@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 exports.handler = async function (event, context) {
   const environment = process.env.CONTEXT
   const api_key = environment !== "production"
